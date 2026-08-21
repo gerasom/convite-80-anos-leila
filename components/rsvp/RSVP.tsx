@@ -30,7 +30,7 @@ export default function RSVP() {
 
         {/* Subtítulo */}
         <p
-          className="text-[10px] font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
+          className="text-xs font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
           Sua presença é especial
@@ -39,7 +39,7 @@ export default function RSVP() {
         {/* Título */}
         <h2
           className="mt-5 text-5xl font-light leading-tight text-[#514363] sm:text-6xl"
-          style={{ fontFamily: "var(--font-cormorant)" }}
+          style={{ fontFamily: "var(--font-lora)" }}
         >
           Confirme sua presença
         </h2>
@@ -47,7 +47,7 @@ export default function RSVP() {
         {/* Texto */}
         <p
           className="mx-auto mt-6 max-w-xl text-xl italic leading-relaxed text-[#75647f] sm:text-2xl"
-          style={{ fontFamily: "var(--font-cormorant)" }}
+          style={{ fontFamily: "var(--font-lora)" }}
         >
           Para nós, será uma alegria ter você neste dia tão especial.
         </p>
@@ -84,7 +84,7 @@ export default function RSVP() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#a98bbb] to-[#c49ab3] px-6 py-4 text-[10px] font-medium uppercase tracking-[0.18em] text-white shadow-lg shadow-[#b89fc0]/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl active:scale-[0.98]"
+              className="flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#a98bbb] to-[#c49ab3] px-6 py-4 text-xs font-medium uppercase tracking-[0.18em] text-white shadow-lg shadow-[#b89fc0]/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl active:scale-[0.98]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               <span className="text-lg">💬</span>
@@ -104,7 +104,7 @@ export default function RSVP() {
         {/* Mensagem final */}
         <p
           className="mt-10 text-2xl italic text-[#75647f] sm:text-3xl"
-          style={{ fontFamily: "var(--font-cormorant)" }}
+          style={{ fontFamily: "var(--font-lora)" }}
         >
           Esperamos você! ♡
         </p>

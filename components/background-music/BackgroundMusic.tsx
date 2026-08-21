@@ -77,24 +77,24 @@ export default function BackgroundMusic({
       />
 
       <button
-        type="button"
-        onClick={toggleMusic}
-        aria-label={
-          isPlaying ? "Desligar música" : "Ligar música"
-        }
-        title={
-          isPlaying ? "Desligar música" : "Ligar música"
-        }
-        className="fixed bottom-5 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-[#dfcee6] bg-white/90 text-[#80688f] shadow-[0_10px_30px_rgba(100,80,120,0.15)] backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95"
-      >
-        <span className="text-lg">
-          {isPlaying ? "♫" : "♪"}
-        </span>
+  type="button"
+  onClick={toggleMusic}
+  aria-label={isPlaying ? "Desligar música" : "Ligar música"}
+  title={isPlaying ? "Desligar música" : "Ligar música"}
+  className="fixed bottom-5 right-5 z-[100] flex h-12 w-12 items-center justify-center rounded-full border border-[#dfcee6] bg-white/95 text-[#80688f] shadow-[0_10px_30px_rgba(100,80,120,0.15)] backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 sm:bottom-6 sm:right-6"
+  style={{
+    marginBottom: "env(safe-area-inset-bottom)",
+    marginRight: "env(safe-area-inset-right)",
+  }}
+>
+  <span className="text-lg">
+    {isPlaying ? "♫" : "♪"}
+  </span>
 
-        {isPlaying && (
-          <span className="absolute inset-0 animate-ping rounded-full border border-[#cdb8d8] opacity-20" />
-        )}
-      </button>
+  {isPlaying && (
+    <span className="absolute inset-0 animate-ping rounded-full border border-[#cdb8d8] opacity-20" />
+  )}
+</button>
     </>
   );
 }

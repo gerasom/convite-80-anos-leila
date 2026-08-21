@@ -6,13 +6,14 @@ import Countdown from "@/components/countdown/Countdown";
 import EventLocation from "@/components/event-location/EventLocation";
 import RSVP from "@/components/rsvp/RSVP";
 import BackgroundMusic from "@/components/background-music/BackgroundMusic";
+import GiftSuggestions from "@/components/gift-suggestions/GiftSuggestions";
 
-import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import { Lora, Montserrat } from "next/font/google";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600"],
 });
 
 const montserrat = Montserrat({
@@ -36,7 +37,7 @@ export default function Home() {
 
   return (
     <main
-      className={`${cormorant.variable} ${montserrat.variable} min-h-screen overflow-x-hidden bg-[#fffdfd] text-[#514363]`}
+      className={`${lora.variable} ${montserrat.variable} min-h-screen overflow-x-hidden bg-[#fffdfd] text-[#514363]`}
     >
       {/* =========================================================
           CAPA DO CONVITE
@@ -106,7 +107,7 @@ export default function Home() {
 
             {/* Texto introdutório */}
             <p
-              className="text-center text-[10px] font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
+              className="text-center text-xs font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Uma celebração especial
@@ -116,14 +117,14 @@ export default function Home() {
             <div className="mt-5 text-center">
               <p
                 className="text-5xl font-light leading-none tracking-wide text-[#514363] sm:text-7xl"
-                style={{ fontFamily: "var(--font-cormorant)" }}
+                style={{ fontFamily: "var(--font-lora)" }}
               >
                 Leila
               </p>
 
               <p
                 className="mt-1 text-3xl font-light tracking-[0.12em] text-[#6d587e] sm:text-5xl"
-                style={{ fontFamily: "var(--font-cormorant)" }}
+                style={{ fontFamily: "var(--font-lora)" }}
               >
                 Maria Araujo
               </p>
@@ -136,13 +137,13 @@ export default function Home() {
               <div className="text-center">
                 <span
                   className="block text-7xl font-light leading-none text-[#9b7eaf] sm:text-9xl"
-                  style={{ fontFamily: "var(--font-cormorant)" }}
+                  style={{ fontFamily: "var(--font-lora)" }}
                 >
                   80
                 </span>
 
                 <span
-                  className="mt-1 block text-[9px] font-medium uppercase tracking-[0.5em] text-[#a17e96] sm:text-[10px]"
+                  className="mt-1 block text-[9px] font-medium uppercase tracking-[0.5em] text-[#a17e96] sm:text-xs"
                   style={{ fontFamily: "var(--font-montserrat)" }}
                 >
                   anos
@@ -155,7 +156,7 @@ export default function Home() {
             {/* Frase */}
             <p
               className="mx-auto max-w-xl text-center text-xl italic leading-relaxed text-[#75647f] sm:text-2xl"
-              style={{ fontFamily: "var(--font-cormorant)" }}
+              style={{ fontFamily: "var(--font-lora)" }}
             >
               Uma vida inteira de histórias, amor e momentos que continuam
               florescendo.
@@ -166,13 +167,13 @@ export default function Home() {
               className="mt-9 flex flex-col items-center justify-center gap-3 text-center sm:mt-11 sm:flex-row sm:gap-8"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              <p className="text-[10px] font-medium uppercase tracking-[0.28em] text-[#9b849f] sm:text-xs">
+              <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#9b849f] sm:text-sm">
                 24 de outubro
               </p>
 
               <span className="h-1 w-1 rounded-full bg-[#c5a8c7]" />
 
-              <p className="text-[10px] font-medium uppercase tracking-[0.28em] text-[#9b849f] sm:text-xs">
+              <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#9b849f] sm:text-sm">
                 11 horas
               </p>
             </div>
@@ -182,7 +183,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={openInvitation}
-                className="rounded-full bg-gradient-to-r from-[#a98bbb] to-[#c49ab3] px-8 py-3 text-[10px] font-medium uppercase tracking-[0.2em] text-white shadow-lg shadow-[#b89fc0]/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl active:scale-95"
+                className="rounded-full bg-gradient-to-r from-[#a98bbb] to-[#c49ab3] px-8 py-3 text-xs font-medium uppercase tracking-[0.2em] text-white shadow-lg shadow-[#b89fc0]/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl active:scale-95"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 Abrir convite
@@ -285,7 +286,7 @@ export default function Home() {
 
               {/* Subtítulo */}
               <p
-                className="text-[10px] font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
+                className="text-xs font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 Uma vida que continua florescendo
@@ -294,7 +295,7 @@ export default function Home() {
               {/* Título */}
               <h2
                 className="mt-5 text-5xl font-light leading-tight text-[#514363] sm:text-6xl"
-                style={{ fontFamily: "var(--font-cormorant)" }}
+                style={{ fontFamily: "var(--font-lora)" }}
               >
                 80 anos de
                 <br />
@@ -307,7 +308,7 @@ export default function Home() {
               {/* Texto principal */}
               <p
                 className="mx-auto max-w-lg text-xl italic leading-relaxed text-[#75647f] sm:text-2xl md:mx-0"
-                style={{ fontFamily: "var(--font-cormorant)" }}
+                style={{ fontFamily: "var(--font-lora)" }}
               >
                 Uma vida construída com amor, família, encontros e memórias
                 preciosas que, ao longo dos anos, fizeram florescer uma
@@ -316,7 +317,7 @@ export default function Home() {
 
               {/* Texto secundário */}
               <p
-                className="mx-auto mt-6 max-w-lg text-sm leading-7 text-[#8b7b91] md:mx-0"
+                className="mx-auto mt-6 max-w-lg text-base leading-8 text-[#8b7b91] md:mx-0"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 Hoje é dia de celebrar cada capítulo dessa história e
@@ -346,6 +347,8 @@ export default function Home() {
       <EventLocation />
 
       <RSVP />
+
+      <GiftSuggestions />
 
       <BackgroundMusic startMusic={isOpen} />
 

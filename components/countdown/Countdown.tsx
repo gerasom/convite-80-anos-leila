@@ -49,7 +49,7 @@ function TimeBox({
       <div className="flex aspect-square w-full max-w-[72px] items-center justify-center rounded-2xl border border-[#e4d7e8] bg-white/80 shadow-[0_10px_30px_rgba(100,80,120,0.08)] sm:max-w-[90px]">
         <span
           className="text-3xl font-light text-[#8f74a4] sm:text-5xl"
-          style={{ fontFamily: "var(--font-cormorant)" }}
+          style={{ fontFamily: "var(--font-lora)" }}
         >
           {String(value).padStart(2, "0")}
         </span>
@@ -109,7 +109,7 @@ export default function Countdown() {
 
         {/* Subtítulo */}
         <p
-          className="text-[10px] font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
+          className="text-xs font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
           style={{ fontFamily: "var(--font-montserrat)" }}
         >
           Estamos contando os dias
@@ -118,7 +118,7 @@ export default function Countdown() {
         {/* Título */}
         <h2
           className="mt-5 text-5xl font-light text-[#514363] sm:text-6xl"
-          style={{ fontFamily: "var(--font-cormorant)" }}
+          style={{ fontFamily: "var(--font-lora)" }}
         >
           Até a nossa celebração
         </h2>
@@ -126,7 +126,7 @@ export default function Countdown() {
         {/* Data */}
         <p
           className="mx-auto mt-4 max-w-xl text-lg italic text-[#75647f] sm:text-xl"
-          style={{ fontFamily: "var(--font-cormorant)" }}
+          style={{ fontFamily: "var(--font-lora)" }}
         >
           24 de outubro de 2026 · 11 horas
         </p>

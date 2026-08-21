@@ -27,7 +27,7 @@ export default function EventLocation() {
         {/* Título */}
         <div className="text-center">
           <p
-            className="text-[10px] font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
+            className="text-xs font-medium uppercase tracking-[0.4em] text-[#927da2] sm:text-xs"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Reserve este momento
@@ -35,14 +35,14 @@ export default function EventLocation() {
 
           <h2
             className="mt-5 text-5xl font-light leading-tight text-[#514363] sm:text-6xl"
-            style={{ fontFamily: "var(--font-cormorant)" }}
+            style={{ fontFamily: "var(--font-lora)" }}
           >
             O grande dia
           </h2>
 
           <p
             className="mx-auto mt-5 max-w-xl text-xl italic leading-relaxed text-[#75647f] sm:text-2xl"
-            style={{ fontFamily: "var(--font-cormorant)" }}
+            style={{ fontFamily: "var(--font-lora)" }}
           >
             Será uma alegria celebrar este momento especial ao lado de
             pessoas tão queridas.
@@ -56,7 +56,7 @@ export default function EventLocation() {
             {/* Data */}
             <div className="border-b border-[#eee5f0] p-8 text-center md:border-b-0 md:border-r sm:p-10">
               <span
-                className="text-[10px] font-medium uppercase tracking-[0.35em] text-[#9b849f]"
+                className="text-xs font-medium uppercase tracking-[0.35em] text-[#9b849f]"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 Data
@@ -64,7 +64,7 @@ export default function EventLocation() {
 
               <p
                 className="mt-3 text-4xl font-light text-[#8f74a4] sm:text-5xl"
-                style={{ fontFamily: "var(--font-cormorant)" }}
+                style={{ fontFamily: "var(--font-lora)" }}
               >
                 24 de outubro
               </p>
@@ -80,7 +80,7 @@ export default function EventLocation() {
             {/* Horário */}
             <div className="p-8 text-center sm:p-10">
               <span
-                className="text-[10px] font-medium uppercase tracking-[0.35em] text-[#9b849f]"
+                className="text-xs font-medium uppercase tracking-[0.35em] text-[#9b849f]"
                 style={{ fontFamily: "var(--font-montserrat)" }}
               >
                 Horário
@@ -88,7 +88,7 @@ export default function EventLocation() {
 
               <p
                 className="mt-3 text-4xl font-light text-[#8f74a4] sm:text-5xl"
-                style={{ fontFamily: "var(--font-cormorant)" }}
+                style={{ fontFamily: "var(--font-lora)" }}
               >
                 11 horas
               </p>
@@ -105,7 +105,7 @@ export default function EventLocation() {
           {/* Local */}
           <div className="border-t border-[#eee5f0] px-7 py-9 text-center sm:px-10 sm:py-10">
             <span
-              className="text-[10px] font-medium uppercase tracking-[0.35em] text-[#9b849f]"
+              className="text-xs font-medium uppercase tracking-[0.35em] text-[#9b849f]"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Local da celebração
@@ -113,7 +113,7 @@ export default function EventLocation() {
 
             <h3
               className="mt-3 text-4xl font-light text-[#514363] sm:text-5xl"
-              style={{ fontFamily: "var(--font-cormorant)" }}
+              style={{ fontFamily: "var(--font-lora)" }}
             >
               Espaço Lumier
             </h3>
@@ -136,7 +136,7 @@ export default function EventLocation() {
               href={GOOGLE_MAPS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex min-h-14 items-center justify-center gap-3 rounded-full border border-[#cdb8d8] bg-white px-6 py-3 text-[10px] font-medium uppercase tracking-[0.18em] text-[#755d83] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#b69bc3] hover:bg-[#faf6fc] hover:shadow-lg"
+              className="group flex min-h-14 items-center justify-center gap-3 rounded-full border border-[#cdb8d8] bg-white px-6 py-3 text-xs font-medium uppercase tracking-[0.18em] text-[#755d83] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#b69bc3] hover:bg-[#faf6fc] hover:shadow-lg"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               <span className="text-lg">📍</span>
@@ -147,7 +147,7 @@ export default function EventLocation() {
               href={WAZE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex min-h-14 items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#a98bbb] to-[#c49ab3] px-6 py-3 text-[10px] font-medium uppercase tracking-[0.18em] text-white shadow-lg shadow-[#b89fc0]/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+              className="group flex min-h-14 items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#a98bbb] to-[#c49ab3] px-6 py-3 text-xs font-medium uppercase tracking-[0.18em] text-white shadow-lg shadow-[#b89fc0]/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               <span className="text-lg">🚗</span>
