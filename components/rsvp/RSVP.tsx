@@ -18,7 +18,6 @@ export default function RSVP() {
       <div className="pointer-events-none absolute -right-32 bottom-10 h-80 w-80 rounded-full bg-[#f6dce8]/40 blur-3xl" />
 
       <div className="relative mx-auto w-full max-w-3xl text-center">
-
         {/* Ornamento superior */}
         <div className="mb-7 flex items-center justify-center gap-3">
           <span className="h-px w-12 bg-[#d8c6e6] sm:w-20" />
@@ -52,11 +51,10 @@ export default function RSVP() {
           Para nós, será uma alegria ter você neste dia tão especial.
         </p>
 
-        {/* Cartão */}
-        <div className="mx-auto mt-12 max-w-xl rounded-[2rem] border border-[#e5d9e8] bg-white/80 px-6 py-10 shadow-[0_25px_70px_rgba(100,80,120,0.10)] backdrop-blur-sm sm:px-10 sm:py-12">
-
+        {/* Conteúdo da confirmação - sem cartão branco */}
+        <div className="mx-auto mt-12 max-w-xl px-6 py-6 sm:px-10 sm:py-8">
           {/* Pequeno detalhe floral */}
-          <div className="mx-auto mb-7 flex h-12 w-12 items-center justify-center rounded-full border border-[#dfcee6] bg-white/80">
+          <div className="mx-auto mb-7 flex h-12 w-12 items-center justify-center rounded-full border border-[#dfcee6] bg-white/30 backdrop-blur-sm">
             <div className="relative h-7 w-7">
               <span className="absolute left-1/2 top-0 h-3.5 w-2.5 -translate-x-1/2 rounded-full bg-[#d7c2e3]" />
 
@@ -70,6 +68,7 @@ export default function RSVP() {
             </div>
           </div>
 
+          {/* Texto explicativo */}
           <p
             className="text-sm leading-7 text-[#8b7b91]"
             style={{ fontFamily: "var(--font-montserrat)" }}
@@ -88,10 +87,12 @@ export default function RSVP() {
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               <span className="text-lg">💬</span>
+
               <span>Confirmar presença pelo WhatsApp</span>
             </a>
           </div>
 
+          {/* Informação */}
           <p
             className="mt-5 text-xs text-[#a18da7]"
             style={{ fontFamily: "var(--font-montserrat)" }}
@@ -117,7 +118,6 @@ export default function RSVP() {
 
           <span className="h-px w-16 bg-[#d8c6e6] sm:w-24" />
         </div>
-
       </div>
     </section>
   );

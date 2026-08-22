@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Leila Maria Araujo | 80 anos",
   description:
-    "Um convite especial para celebrar os 80 anos de Leila Maria Araujo. 24 de outubro de 2026, às 11 horas, no Espaço Lumier.",
+    "Um convite especial para celebrar os 80 anos de Leila Maria Araujo. 24 de outubro de 2026, às 11:30, no Espaço Lumier.",
 };
 
 export default function RootLayout({

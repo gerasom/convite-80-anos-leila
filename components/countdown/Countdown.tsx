@@ -9,7 +9,7 @@ type TimeLeft = {
   seconds: number;
 };
 
-const EVENT_DATE = new Date("2026-10-24T11:00:00-03:00").getTime();
+const EVENT_DATE = new Date("2026-10-24T11:30:00-03:00").getTime();
 
 function calculateTimeLeft(): TimeLeft {
   const difference = EVENT_DATE - Date.now();
@@ -128,7 +128,7 @@ export default function Countdown() {
           className="mx-auto mt-4 max-w-xl text-lg italic text-[#75647f] sm:text-xl"
           style={{ fontFamily: "var(--font-lora)" }}
         >
-          24 de outubro de 2026 · 11 horas
+          24 de outubro de 2026 · 11:30
         </p>
 
         {/* Contador */}
