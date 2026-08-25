@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import RoseBloom from "../rose-bloom/RoseBloom";
 
 type TimeLeft = {
   days: number;
@@ -66,14 +67,9 @@ function TimeBox({
 }
 
 export default function Countdown() {
-  /*
-   * Começamos com null para que o servidor e o primeiro
-   * render do navegador produzam exatamente o mesmo HTML.
-   */
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
   useEffect(() => {
-    // Primeiro cálculo somente no navegador.
     setTimeLeft(calculateTimeLeft());
 
     const timer = window.setInterval(() => {
@@ -83,10 +79,6 @@ export default function Countdown() {
     return () => window.clearInterval(timer);
   }, []);
 
-  /*
-   * Enquanto o navegador ainda não calculou o tempo,
-   * mostramos os mesmos valores nos dois lados.
-   */
   const displayTime: TimeLeft = timeLeft ?? {
     days: 0,
     hours: 0,
@@ -95,9 +87,9 @@ export default function Countdown() {
   };
 
   return (
-    <section className="relative px-6 py-24">
+    <section className="relative overflow-hidden px-6 py-24">
       <div className="mx-auto w-full max-w-4xl text-center">
-
+        
         {/* Ornamento superior */}
         <div className="mb-7 flex items-center justify-center gap-3">
           <span className="h-px w-12 bg-[#d8c6e6] sm:w-20" />
@@ -154,6 +146,9 @@ export default function Countdown() {
           />
         </div>
 
+        {/* Rosa desabrochando */}
+        <RoseBloom />
+
         {/* Ornamento inferior */}
         <div className="mt-10 flex items-center justify-center gap-3">
           <span className="h-px w-16 bg-[#d8c6e6] sm:w-24" />
@@ -162,7 +157,6 @@ export default function Countdown() {
 
           <span className="h-px w-16 bg-[#d8c6e6] sm:w-24" />
         </div>
-
       </div>
     </section>
   );

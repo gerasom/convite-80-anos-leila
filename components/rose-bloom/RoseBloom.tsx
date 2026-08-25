@@ -31,7 +31,7 @@ export default function RoseBloom() {
   }, [currentRose]);
 
   return (
-    <div className="relative mx-auto mt-10 flex h-[180px] w-full max-w-[180px] items-center justify-center md:mx-0 md:h-[220px] md:max-w-[220px]">
+    <div className="relative mx-auto mt-16 flex h-[180px] w-full max-w-[180px] items-center justify-center md:mx-0 md:h-[220px] md:max-w-[220px]">
       {/* Brilho suave ao redor da rosa */}
       <div className="absolute inset-0 scale-75 rounded-full bg-[#e8d7df]/40 blur-3xl" />
 

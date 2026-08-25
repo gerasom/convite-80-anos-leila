@@ -88,7 +88,7 @@ export default function RSVP() {
             >
               <span className="text-lg">💬</span>
 
-              <span>Confirmar presença pelo WhatsApp</span>
+              <span>Clique aqui para confirmar presença pelo WhatsApp</span>
             </a>
           </div>
 
