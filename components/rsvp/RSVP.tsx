@@ -69,16 +69,24 @@ export default function RSVP() {
           </div>
 
           {/* Texto explicativo */}
-          <p
-            className="text-sm leading-7 text-[#8b7b91]"
-            style={{ fontFamily: "var(--font-montserrat)" }}
-          >
-            Sua confirmação nos ajudará a preparar tudo com muito carinho
-            para receber cada convidado.
-          </p>
+<p
+  className="text-sm leading-7 text-[#8b7b91]"
+  style={{ fontFamily: "var(--font-montserrat)" }}
+>
+  Sua confirmação nos ajudará a preparar tudo com muito carinho
+  para receber cada convidado.
+</p>
 
-          {/* Botão WhatsApp */}
-          <div className="mt-8">
+{/* Prazo para confirmação */}
+<p
+  className="mt-5 text-sm font-medium text-[#755d83]"
+  style={{ fontFamily: "var(--font-montserrat)" }}
+>
+  Confirme sua presença até 26 de setembro.
+</p>
+
+{/* Botão WhatsApp */}
+<div className="mt-8">
             <a
               href={WHATSAPP_URL}
               target="_blank"
